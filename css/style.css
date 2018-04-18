@@ -1,0 +1,188 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+
+body {
+  background-color: #dadada;
+  font-size: 10px;
+}
+
+
+h1.modern {
+	font-size: 2.2em;
+	font-family: Roboto;
+	font-weight: 600;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	padding: 35px 0 20px;
+	text-align:center;
+
+}
+
+ .emphasis {
+	font-size: inherit;
+	font-family: Roboto;
+	font-weight: 600;
+	letter-spacing: .2em;
+	text-transform: uppercase;
+	padding: 35px 0 20px;
+	text-align:center;
+}
+
+
+.container {
+  margin: 0 auto;
+  width:100%;
+}
+
+img {
+	max-width: 100%;
+}
+
+.preview {
+	height: 300px;
+	margin:2em,0;
+	padding: 2%;
+	width: 100%;
+
+}
+
+.preview h1 {
+	font-size: 2.4em;
+	padding: 5%;
+	text-align: left;
+}
+
+.Baku {
+	background-image: url(/images/baku.jpg);
+	background-size: cover;
+	background-position:left;
+	}
+
+.London {
+	background-image: url(/images/london.png);
+	background-size: cover;
+	background-position:left;
+}
+
+.Madrid {
+	background-image: url(/images/madrid.jpg);
+	background-size: cover;
+	background-position:left;
+
+}
+
+.Rome {
+	background-image: url(/images/rome.jpg);
+	background-size: cover;
+	background-position:left;
+	}
+
+/* code added to create two-column tablet screens */
+@media screen and (min-width: 600px){
+   .container {
+    width: 70%;
+		}
+
+	.preview {
+		background-size: cover;
+		float: left;
+		height: 200px;
+		margin: 2em 1%;
+		width: 48%;
+		}
+
+}
+
+h1, h3 {
+  font-size: 2.5em;
+  margin: 0;
+}
+
+
+
+
+/* media queries  for mobile devices screens */
+@media screen and (max-width: 360px){
+   .container {
+    width: 80%;
+		margin: 0 auto;
+  	}
+
+	.preview {
+		background-size: cover;
+		height: 200px;
+		margin: 2em 1%;
+		width: 90%;
+		height: auto;
+		}
+
+}
+
+
+
+
+/*code created to make four column design desktop screens */
+@media screen and (min-width: 900px){
+   .container {
+    width: 70%;
+	 	}
+
+	.preview {
+		background-size: cover;
+		margin: 2em 1%;
+		width: 23%;
+		height: 230px;
+		}
+
+}
